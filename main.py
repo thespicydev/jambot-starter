@@ -6,7 +6,7 @@ variable DISCORD_TOKEN. Example:
 # .env file
 DISCORD_TOKEN=whatever_your_token_is
 '''
-from bots import dummy_bot, jam_bot
+from bots import dummy_bot
 from dotenv import load_dotenv
 
 import argparse
@@ -17,8 +17,8 @@ import os
 def main():
     load_dotenv()
     token = os.getenv('DISCORD_TOKEN')
-    spicy_bot = jam_bot.JamBot()
-    spicy_bot.run(token)
+    bot = dummy_bot.DummyBot()
+    bot.run(token)
 
 
 if __name__ == '__main__':

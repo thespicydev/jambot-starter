@@ -23,7 +23,6 @@ class DummyBot(commands.Bot):
         This is usually after the bot login is successful.
         NOTE: Not guaranteed to be the first event called or only called once.
         '''
-        pass
     
     async def on_member_join(self, member: Member):
         '''Called when a Member joins a Guild.
@@ -52,7 +51,6 @@ class DummyBot(commands.Bot):
         Args:
             message - The message sent.
         '''
-        pass
     
     async def on_error(self, event: str, *args, **kwargs):
         '''Exception handler for exceptions raised during event handling.
