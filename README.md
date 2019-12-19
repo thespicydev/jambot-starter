@@ -1,1 +1,1 @@
-# spicebot
+Starter code for the Discord bot JamBot.
